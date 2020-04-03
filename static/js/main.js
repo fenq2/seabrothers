@@ -93,6 +93,33 @@ var license = new Swiper('.license-container', {
     }
   }
 });
+var partners = new Swiper('.partners-container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.partners__next',
+    prevEl: '.partners__prev'
+  },
+  slidesPerView: 2,
+  spaceBetween: 15,
+  breakpoints: {
+    // when window width is >= 320px
+    400: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    },
+    600: {
+      slidesPerView: 4,
+      spaceBetween: 15
+    },
+    960: {
+      slidesPerView: 6,
+      spaceBetween: 15
+    }
+  }
+});
 $('.services__content').isotope({
   itemSelector: '.isotope-item',
   layoutMode: 'fitRows'
