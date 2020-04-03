@@ -145,3 +145,21 @@ var filter = function filter() {
 };
 
 filter();
+$(document).ready(function () {
+  $('.image-link').magnificPopup({
+    type: 'image'
+  });
+  $('.license-item').magnificPopup({
+    gallery: {
+      enabled: true
+    },
+    type: 'image' // other options
+
+  });
+});
+$('.js-popup-link').magnificPopup({
+  showCloseBtn: false
+});
+$(document).on('click', '.popup__close', function () {
+  $.magnificPopup.close();
+});
