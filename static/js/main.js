@@ -163,3 +163,31 @@ $('.js-popup-link').magnificPopup({
 $(document).on('click', '.popup__close', function () {
   $.magnificPopup.close();
 });
+var passageMoreLink = document.querySelector('.fast-passage__more');
+
+if ($('.fast-passage__link').length > 10) {
+  $('.fast-passage__link').addClass('fast-passage__link--hidden');
+  passageMoreLink.classList.add('fast-passage__more--active');
+  $(function () {
+    $(".fast-passage__link").slice(0, 10).show();
+    $(".fast-passage__more").on('click', function (e) {
+      e.preventDefault();
+      $(".fast-passage__link:hidden").slice(0, 5).slideDown();
+
+      if ($(".fast-passage__link:hidden").length == 0) {
+        $(".fast-passage__more").fadeOut('slow');
+      }
+    });
+  });
+}
+
+var reviewsAdv = new Swiper('.reviews-adv__container', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
