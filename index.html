@@ -88,25 +88,35 @@
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-xl-10 col-12">
-                  <div class="sandwich"><a class="sandwich__open-btn" href="#"><span class="sandwich__line sandwich__line--top"></span><span class="sandwich__line sandwich__line--center"></span><span class="sandwich__line sandwich__line--bottom"></span></a>
-                    <div class="sandwich__content"><a class="sandwich__close-btn" href="#">
-                        <svg class="svg-sprite-icon icon-close sandwich__close-icon">
+                  <nav class="main-nav"><a class="main-nav__open-btn" href="#"><span class="main-nav__line main-nav__line--top"></span><span class="main-nav__line main-nav__line--center"></span><span class="main-nav__line main-nav__line--bottom"></span></a>
+                    <div class="main-nav__wrap"><a class="main-nav__close-btn" href="#">
+                        <svg class="svg-sprite-icon icon-close main-nav__close-icon">
                           <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
                         </svg></a>
-                      <nav class="sandwich-nav">
-                        <ul class="sandwich-nav__list">
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">О компании</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Фрахтование</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Логистика</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Таможня</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Агентирование</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Техменеджмент</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Словарь терминов</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Контакты</a></li>
-                        </ul>
-                      </nav>
-                      <div class="sandwich__footer">
-                        <div class="sandwich-contacts">
+                      <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Фрахтование</a>
+                          <ul class="dropdown dropdown-list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Первая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Вторая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Третья длинная ссылка </a></li>
+                          </ul>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Логистика</a>
+                          <ul class="dropdown dropdown-list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Первая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Вторая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Третья длинная ссылка </a></li>
+                          </ul>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Таможня</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Агентирование</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Техменеджмент</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Словарь терминов</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                      </ul>
+                      <div class="main-nav__footer">
+                        <div class="main-nav-contacts">
                           <div class="header-contacts__item">
                             <svg class="svg-sprite-icon icon-skype header-contacts__icon">
                               <use xlink:href="static/images/sprite/symbol/sprite.svg#skype"></use>
@@ -118,7 +128,7 @@
                             </svg><a class="header-contacts__link" href="mailto:we@seabrothers.com">we@seabrothers.com</a>
                           </div>
                         </div>
-                        <div class="sandwich-social">
+                        <div class="main-nav-social">
                           <svg class="svg-sprite-icon icon-telegram header-social__icon header-social__icon--telegram">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#telegram"></use>
                           </svg>
@@ -131,18 +141,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <nav class="main-nav">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Фрахтование</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Логистика</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Таможня</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Агентирование</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Техменеджмент</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Словарь терминов</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
-                    </ul>
                   </nav>
                 </div>
                 <div class="col-xl-2">
@@ -220,19 +218,7 @@
                   <h3 class="section-title services__title">Услуги</h3>
                 </div>
                 <div class="col-xl-9">
-                  <div class="services-filter"><a class="services-filter__open" href="javascript:void(0);">Фильтр</a>
-                    <nav class="services-filter__nav">
-                      <ul class="services-nav__list">
-                        <li class="services-nav__item services-nav__item--active" data-filter="*">Все</li>
-                        <li class="services-nav__item" data-filter=".chartering">Фрахтование</li>
-                        <li class="services-nav__item" data-filter=".logistic">Логистика</li>
-                        <li class="services-nav__item" data-filter=".customs">Таможня</li>
-                        <li class="services-nav__item" data-filter=".agency">Агентирование</li>
-                        <li class="services-nav__item" data-filter=".management">Техменеджмент</li>
-                        <li class="services-nav__item" data-filter=".support">Юридическая поддержка</li>
-                      </ul>
-                    </nav>
-                  </div>
+                  <div class="services-filter"><a class="services-filter__open" href="javascript:void(0);">Фильтр</a></div>
                   <nav class="services-nav">
                     <ul class="services-nav__list">
                       <li class="services-nav__item services-nav__item--active" data-filter="*">Все</li>
@@ -792,6 +778,14 @@
               <label class="request-form__label popup__form-label" for="politic">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности. <a href="#" class="request-form__politic-more popup__form-more">Узнать больше</a></label>
             </div>
           </form>
+        </div>
+        <div class="popup mfp-hide popup-calculate" id="popup-calculate">
+          <div class="popup__close">
+            <svg class="svg-sprite-icon icon-close popup__close-icon">
+              <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+            </svg>
+          </div><span class="popup__title">Расчет стоимости</span><span class="popup__description popup-calculate__description">Воспользуйтесь нашим онлайн калькулятором для рассчета стоимости вашего груза.</span>
+          <div class="popup-calculate__form"><img src="static/images/content/form.png" alt=""></div>
         </div>
       </div>
     </div>
