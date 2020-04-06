@@ -61,7 +61,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-xl-3 mb-md-4"><a class="logo" href="#"><img class="logo__img" src="static/images/content/logo.png" alt="Логотип"></a></div>
-                <div class="col-xl-3 col-md-4 col-sm-6 col-6 d-flex justify-content-md-end align-items-start justify-content-center"><a class="btn calculate-btn" href="#">
+                <div class="col-xl-3 col-md-4 col-sm-6 col-6 d-flex justify-content-md-end align-items-start justify-content-center"><a class="btn calculate-btn js-popup-link" href="#popup-calculate">
                     <svg class="svg-sprite-icon icon-wheel calculate-btn__icon">
                       <use xlink:href="static/images/sprite/symbol/sprite.svg#wheel"></use>
                     </svg><span class="calculate-btn__text">Рассчитать стоимость</span></a></div>
@@ -88,25 +88,35 @@
             <div class="container">
               <div class="row align-items-center">
                 <div class="col-xl-10 col-12">
-                  <div class="sandwich"><a class="sandwich__open-btn" href="#"><span class="sandwich__line sandwich__line--top"></span><span class="sandwich__line sandwich__line--center"></span><span class="sandwich__line sandwich__line--bottom"></span></a>
-                    <div class="sandwich__content"><a class="sandwich__close-btn" href="#">
-                        <svg class="svg-sprite-icon icon-close sandwich__close-icon">
+                  <nav class="main-nav"><a class="main-nav__open-btn" href="#"><span class="main-nav__line main-nav__line--top"></span><span class="main-nav__line main-nav__line--center"></span><span class="main-nav__line main-nav__line--bottom"></span></a>
+                    <div class="main-nav__wrap"><a class="main-nav__close-btn" href="#">
+                        <svg class="svg-sprite-icon icon-close main-nav__close-icon">
                           <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
                         </svg></a>
-                      <nav class="sandwich-nav">
-                        <ul class="sandwich-nav__list">
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">О компании</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Фрахтование</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Логистика</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Таможня</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Агентирование</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Техменеджмент</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Словарь терминов</a></li>
-                          <li class="sandwich-nav__item"><a class="sandwich-nav__link" href="#">Контакты</a></li>
-                        </ul>
-                      </nav>
-                      <div class="sandwich__footer">
-                        <div class="sandwich-contacts">
+                      <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Фрахтование</a>
+                          <ul class="dropdown dropdown-list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Первая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Вторая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Третья длинная ссылка </a></li>
+                          </ul>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Логистика</a>
+                          <ul class="dropdown dropdown-list">
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Первая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Вторая ссылка</a></li>
+                            <li class="dropdown__item"><a class="dropdown__link" href="#">Третья длинная ссылка </a></li>
+                          </ul>
+                        </li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Таможня</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Агентирование</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Техменеджмент</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Словарь терминов</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+                      </ul>
+                      <div class="main-nav__footer">
+                        <div class="main-nav-contacts">
                           <div class="header-contacts__item">
                             <svg class="svg-sprite-icon icon-skype header-contacts__icon">
                               <use xlink:href="static/images/sprite/symbol/sprite.svg#skype"></use>
@@ -118,7 +128,7 @@
                             </svg><a class="header-contacts__link" href="mailto:we@seabrothers.com">we@seabrothers.com</a>
                           </div>
                         </div>
-                        <div class="sandwich-social">
+                        <div class="main-nav-social">
                           <svg class="svg-sprite-icon icon-telegram header-social__icon header-social__icon--telegram">
                             <use xlink:href="static/images/sprite/symbol/sprite.svg#telegram"></use>
                           </svg>
@@ -131,18 +141,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <nav class="main-nav">
-                    <ul class="main-nav__list">
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Фрахтование</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Логистика</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Таможня</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Агентирование</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Техменеджмент</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Словарь терминов</a></li>
-                      <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
-                    </ul>
                   </nav>
                 </div>
                 <div class="col-xl-2">
@@ -157,9 +155,15 @@
             </div>
           </div>
         </header>
-        <div class="breadcrumbs">
-          <div class="container"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__arrow">&gt;</span><a class="breadcrumbs__link" href="#">Услуги</a><span class="breadcrumbs__arrow">&gt;</span><span class="breadcrumbs__current">Авиаперевозка грузов</span></div>
-        </div>
+        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"> <a class="breadcrumb-link" href="index.html">Главная</a></li>
+              <li class="breadcrumb-item"> <a class="breadcrumb-link" href="index.html">Раздел</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+            </ol>
+          </div>
+        </nav>
         <section class="air-transport">
           <div class="container">
             <h3 class="section-title air-transport__title">Авиаперевозка грузов</h3>
@@ -170,15 +174,50 @@
             <div class="transport-offer"><span class="transport-offer__text">С другой стороны новая модель организационной деятельности требуют от нас анализа направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет оценить значение модели развития. Повседневная практика показывает, что укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития. С другой стороны новая модель организационной деятельности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание соответствующий условий активизации.</span><a class="btn transport-offer__btn" href="#">Заказать авиаперевозку груза</a></div>
             <div class="transport-price">
               <h3 class="section-title transport-price__title">Таблица цен</h3>
-              <div class="transport-price__table transport-table">
-                <div class="transport-table__header"><span class="transport-table__title transport-table__name">Наименование услуги</span><span class="transport-table__title transport-table__title--center transport-table__weight">Вес</span><span class="transport-table__title transport-table__title--center transport-table__deadlines">Сроки</span><span class="transport-table__title transport-table__title--center transport-table__price">Стоимость</span></div>
-                <div class="transport-table__row"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-                <div class="transport-table__row transport-table__row--color"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-                <div class="transport-table__row"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-                <div class="transport-table__row transport-table__row--color"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-                <div class="transport-table__row"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-                <div class="transport-table__row transport-table__row--color"><span class="transport-table__text transport-table__name">Фрахтование</span><span class="transport-table__text transport-table__text--center transport-table__weight">10 т</span><span class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</span><span class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</span></div>
-              </div>
+              <table class="transport-price__table transport-table">
+                <tr class="transport-table__header">
+                  <th class="transport-table__title transport-table__name">Наименование услуги</th>
+                  <th class="transport-table__title transport-table__title--center transport-table__weight">Вес</th>
+                  <th class="transport-table__title transport-table__title--center transport-table__deadlines">Сроки</th>
+                  <th class="transport-table__title transport-table__title--center transport-table__price">Стоимость</th>
+                </tr>
+                <tr class="transport-table__row">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+                <tr class="transport-table__row transport-table__row--color">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+                <tr class="transport-table__row">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+                <tr class="transport-table__row transport-table__row--color">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+                <tr class="transport-table__row">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+                <tr class="transport-table__row transport-table__row--color">
+                  <td class="transport-table__text transport-table__name">Фрахтование</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__weight">10 т</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__deadlines">10-14 дней</td>
+                  <td class="transport-table__text transport-table__text--center transport-table__text--fw transport-table__price">80 000руб</td>
+                </tr>
+              </table>
             </div>
           </div>
         </section>
@@ -580,6 +619,14 @@
               <label class="request-form__label popup__form-label" for="politic">Настоящим подтверждаю, что я ознакомлен и согласен с условиями политики конфиденциальности. <a href="#" class="request-form__politic-more popup__form-more">Узнать больше</a></label>
             </div>
           </form>
+        </div>
+        <div class="popup mfp-hide popup-calculate" id="popup-calculate">
+          <div class="popup__close">
+            <svg class="svg-sprite-icon icon-close popup__close-icon">
+              <use xlink:href="static/images/sprite/symbol/sprite.svg#close"></use>
+            </svg>
+          </div><span class="popup__title">Расчет стоимости</span><span class="popup__description popup-calculate__description">Воспользуйтесь нашим онлайн калькулятором для рассчета стоимости вашего груза.</span>
+          <div class="popup-calculate__form"><img src="static/images/content/form.png" alt=""></div>
         </div>
       </div>
     </div>

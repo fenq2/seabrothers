@@ -19,12 +19,12 @@ var locationItem = function locationItem() {
 locationItem();
 
 var sandwich = function sandwich() {
-  var $hideElement = $('.sandwich__content');
-  $('.sandwich__open-btn').on('click', function () {
-    $hideElement.addClass('sandwich__content-opend');
+  var $hideElement = $('.main-nav__wrap');
+  $('.main-nav__open-btn').on('click', function () {
+    $hideElement.addClass('main-nav__wrap-opend');
   });
-  $('.sandwich__close-btn').on('click', function () {
-    $hideElement.removeClass('sandwich__content-opend');
+  $('.main-nav__close-btn').on('click', function () {
+    $hideElement.removeClass('main-nav__wrap-opend');
   });
 };
 
@@ -135,12 +135,12 @@ $('.services-nav__item').click(function () {
 });
 
 var filter = function filter() {
-  var $hideElement = $('.services-filter__nav');
+  var $hideElement = $('.services-nav');
   $('.services-filter__open').on('click', function () {
-    $hideElement.addClass('services-filter__nav-opend');
+    $hideElement.addClass('services-nav-opend');
   });
   $('.services-nav__item').on('click', function () {
-    $hideElement.removeClass('services-filter__nav-opend');
+    $hideElement.removeClass('services-nav-opend');
   });
 };
 
@@ -190,4 +190,7 @@ var reviewsAdv = new Swiper('.reviews-adv__container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   }
+});
+$(".main-nav__item").click(function () {
+  return $(this).toggleClass('main-nav__item--active').siblings().removeClass('main-nav__item--active');
 });
